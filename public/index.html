@@ -13,6 +13,9 @@
       .bg-hero-home {
         background-image: url("../assets/img/hero.svg");
       }
+      .bg-gravity-9 {
+        background-image: url("../assets/img/gravity-9.svg");
+      }
     </style>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -53,7 +56,7 @@
               <a href="#lexo-z">Lexo Z</a>
             </li>
             <li>
-              <a href="">Gravity 9</a>
+              <a href="#gravity-9">Gravity 9</a>
             </li>
           </ul>
         </div>
@@ -82,7 +85,7 @@
           class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <a href="" class="flex items-center text-white">
+          <a href="#hero" class="flex items-center text-white">
             <img
               src="../assets/logo/hyper-dash.svg"
               class=""
@@ -108,7 +111,7 @@
 
     <section
       id="air-x"
-      class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover h-screen flex justify-center items-center"
+      class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover h-screen flex justify-center items-center py-10"
     >
       <div class="relative w-2/3 h-2/3">
         <video autoplay loop muted class="w-full h-full object-cover">
@@ -132,8 +135,153 @@
       
     </section>
 
-    <section id="lexo-z" class="relative bg-black bg-no-repeat bg-cover h-screen">
+    <!-- <section id="lexo-z" class="relative bg-neutral-900 bg-no-repeat bg-cover">
+      <div class="flex">
+        <div class="flex flex-col w-2/6 justify-center mx-auto p-0">
+          <h1 class="text-white text-4xl md:text-7xl mb-5">Lexo-Z</h1>
+          <p class="text-white text-xl md:text-4xl mb-10">Accelerate into a New Era</p>
 
-    </section>
+          <div class="w-96">
+            <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+          </div>
+          <div class="w-96">
+            <p class="text-white mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+          </div>
+          <div class="w-96">
+            <p class="text-white mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            </p>
+          </div>
+          <div class="flex mt-10">
+            <button class="bg-white text-black py-3 px-6">Order Now</button>
+            <button class="text-white py-3 px-6 ">Learn More</button>
+        </div>
+
+      </div>
+          <div class="w-1/2 h-full">
+              <img src="../assets/img/lexo-z.svg" alt="Gambar Lexo Z" class="max-w-full h-auto">
+          </div>
+      </div>
+  </section> -->
+
+  <section id="lexo-z" class="relative bg-neutral-900 bg-no-repeat bg-cover pt-5">
+    <div class="flex flex-col md:flex-row">
+      <div class="w-full md:w-1/2 h-auto lg:hidden md:hidden">
+        <img src="../assets/img/lexo-z.svg" alt="Gambar Lexo Z" class="max-w-full h-auto">
+    </div>
+        <div class="w-full md:w-2/6 flex flex-col justify-center mx-auto p-5 md:p-0 sm:p-20">
+            <h1 class="text-white text-4xl md:text-7xl mb-3 md:mb-5">Lexo-Z</h1>
+            <p class="text-white text-xl md:text-4xl mb-5 md:mb-10">Accelerate into a New Era</p>
+
+            <div class="w-full md:w-96">
+                <p class="text-white mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+            </div>
+            <div class="w-full md:w-96">
+                <p class="text-white mb-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+            </div>
+            <div class="w-full md:w-96">
+                <p class="text-white mb-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+            </div>
+            <div class="flex mt-5">
+                <button class="bg-white text-lg text-black py-3 px-9 hover:bg-gray-300">Order Now</button>
+                <button class="text-white text-lg py-3 px-9 ml-2 hover:text-gray-300" >Learn More</button>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 h-full hidden md:block">
+            <img src="../assets/img/lexo-z.svg" alt="Gambar Lexo Z" class="max-w-full h-full">
+        </div>
+    </div>
+</section>
+
+
+
+<section
+id="gravity-9"
+class="relative bg-white bg-right bg-no-repeat bg-gravity-9 h-screen py-20 lg:py-28 mb-10"
+>
+<div class="w-full md:w-2/6 flex flex-col p-5 md:p-0 lg:ms-28 md:ms-28">
+  <h1 class="text-black text-4xl md:text-7xl mb-3 md:mb-5">Gravity-9</h1>
+  <p class="text-black text-xl md:text-4xl mb-5 md:mb-10">Accelerate into a New Era</p>
+
+  <div class="w-full md:w-96">
+      <p class="text-black mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+  </div>
+  <div class="flex mt-5 md:mt-10">
+      <button class="bg-black text-white text-lg py-3 px-9 hover:bg-gray-300">Order Now</button>
+      <button class="text-black text-lg py-3 px-9 ml-2 hover:text-gray-300">Learn More</button>
+  </div>
+</div>
+</section>
+
+<section id="video" class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover h-screen">
+  <video autoplay loop muted class="w-full h-full object-cover">
+    <source src="../assets/video/video.webm" />
+    Maaf, browser Anda tidak mendukung video GIF.
+  </video>
+</section>
+
+
+<!-- <section id="info" class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover text-white">
+  <div class="flex justify-between text-center h-full p-28">
+    <div class="info-box">
+      <p class="mb-10">Max Power</p>
+      <h1 class="text-6xl font-semibold mb-5">1200+</h1>
+      <h3 class="text-3xl">hp</h3>
+
+    </div>
+    <div class="info-box">
+      <p class="mb-10">EPA estimated ranged up to</p>
+      <h1 class="text-6xl font-semibold mb-5">516</h1>
+      <h3 class="text-3xl">mi</h3>
+    </div>
+    <div class="info-box">
+      <p class="mb-10">minutes to charge 200 miles</p>
+      <h1 class="text-6xl font-semibold mb-5">12</h1>
+      <h3 class="text-3xl">mins</h3>
+    </div>
+    <div class="info-box">
+      <p class="mb-10">0-60 MPH</p>
+      <h1 class="text-6xl font-semibold mb-5"><2</h1>
+      <h3 class="text-3xl">sec</h3>
+    </div>
+  </div>
+</section> -->
+
+<section id="info" class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover text-white">
+  <div class="flex flex-col md:flex-row justify-center items-center md:justify-between text-center h-full p-4 md:p-28">
+    <div class="info-box mb-10 mt-10 md:mb-0 md:mt-0">
+      <p class="mb-3 md:mb-10">Max Power</p>
+      <h1 class="text-4xl md:text-6xl font-semibold mb-1 md:mb-5">1200+</h1>
+      <h3 class="text-xl md:text-3xl">hp</h3>
+    </div>
+    <div class="info-box mb-10 md:mb-0">
+      <p class="mb-3 md:mb-10">EPA estimated range up to</p>
+      <h1 class="text-4xl md:text-6xl font-semibold mb-1 md:mb-5">516</h1>
+      <h3 class="text-xl md:text-3xl">mi</h3>
+    </div>
+    <div class="info-box mb-10 md:mb-0">
+      <p class="mb-3 md:mb-10">minutes to charge 200 miles</p>
+      <h1 class="text-4xl md:text-6xl font-semibold mb-1 md:mb-5">12</h1>
+      <h3 class="text-xl md:text-3xl">mins</h3>
+    </div>
+    <div class="info-box mb-10 md:mb-0">
+      <p class="mb-3 md:mb-10">0-60 MPH</p>
+      <h1 class="text-4xl md:text-6xl font-semibold mb-1 md:mb-5">&lt;2</h1>
+      <h3 class="text-xl md:text-3xl">sec</h3>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+  
+
+  
   </body>
 </html>
