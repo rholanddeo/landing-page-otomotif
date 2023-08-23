@@ -1,46 +1,139 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/style.css" rel="stylesheet">
-</head>
-<body>
-  
-<nav class="bg-black fixed w-full z-20 top-0 left-0">
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-8">
-      <div class="justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-              <ul
-                class="flex flex-col p-4 md:p-0 mt-4 gap-3 border rounded-lg text-white md:flex-row md:space-x-8 md:mt-0 md:border-0">
-                <li>
-                    <a href="" >Air X</a>
-                </li>
-                <li>
-                    <a href="">Lexo Z</a>
-                </li>
-                <li>
-                  <a href="">Gravity 9</a>
-              </li>
-            </ul>
-      </div>
-        
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .bg-hero-home {
+        background-image: url("../assets/img/hero.svg");
+      }
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const anchorLinks = document.querySelectorAll('a[href^="#"]');
+
+        anchorLinks.forEach(function (link) {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = link.getAttribute("href");
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="bg-neutral-900 fixed w-full z-20 top-0 left-0">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-8"
+      >
+        <div
+          class="justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 gap-3 border rounded-lg text-white md:flex-row md:space-x-8 md:mt-0 md:border-0"
+          >
+            <li>
+              <a href="#air-x">Air X</a>
+            </li>
+            <li>
+              <a href="#lexo-z">Lexo Z</a>
+            </li>
+            <li>
+              <a href="">Gravity 9</a>
+            </li>
+          </ul>
+        </div>
+
         <div class="md:order-2">
-            <div class="hidden md:block">
-                
-            </div>
+          <div class="hidden md:block"></div>
 
-            <a href="" class=" text-white focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0 outline outline-0 ">Shop</a>
-            <a href="register.html" class=" text-white focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0 outline outline-0 ">Account</a>
-            <a href="" class="text-white bg-gray-800 hover:bg-black-800 focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0">=</a>
+          <a
+            href=""
+            class="text-white focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0 outline outline-0"
+            >Shop</a
+          >
+          <a
+            href="register.html"
+            class="text-white focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0 outline outline-0"
+            >Account</a
+          >
+          <a
+            href=""
+            class="text-white hover:bg-black-800 focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0"
+            >=</a
+          >
         </div>
 
-        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
           <a href="" class="flex items-center text-white">
-            <img src="../assets/logo/hyper-dash.svg" class="" alt="HD Logo">
-        </a>
+            <img
+              src="../assets/logo/hyper-dash.svg"
+              class=""
+              alt="Hyper Dash"
+            />
+          </a>
         </div>
-    </div>
-</nav>
+      </div>
+    </nav>
 
-</body>
+    <section
+      id="hero"
+      class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover bg-hero-home h-screen"
+    >
+      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-8">
+        <a
+          href="#"
+          class="bg-transparent border-2 border-white text-white py-2 px-3 text-sm transition-colors hover:bg-white hover:text-black"
+          >Test Drive</a
+        >
+      </div>
+    </section>
+
+    <section
+      id="air-x"
+      class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover h-screen flex justify-center items-center"
+    >
+      <div class="relative w-2/3 h-2/3">
+        <video autoplay loop muted class="w-full h-full object-cover">
+          <source src="../assets/video/air-x-vid.webm" />
+          Maaf, browser Anda tidak mendukung video WebM.
+        </video>
+        <div
+          class="absolute top-0 left-0 p-8 max-w-sm text-white"
+          style="transform: translateY(-50%)"
+        >
+          <h1 class="text-4xl md:text-4xl lg:text-7xl">Air-X</h1>
+        </div>
+        <div class="absolute bottom-0 left-0 text-white"
+        style="transform: translateY(100%)"
+        >
+          <p class="text-xl md:text-4xl p-3 py-5">
+            Accelerate Into New Era
+          </p>
+        </div>
+      </div>
+      
+    </section>
+
+    <section id="lexo-z" class="relative bg-black bg-no-repeat bg-cover h-screen">
+
+    </section>
+  </body>
 </html>
