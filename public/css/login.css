@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.login {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "left right";
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+}
+.login .left {
+  grid-area: left;
+}
+.login .left img {
+  height: 100%;
+  width: 100%;
+}
+.login .right {
+  grid-area: right;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20%;
+  background-color: #191919;
+  height: 100%;
+}
+
+.login .right .box {
+  display: flex;
+  flex-direction: column;
+  background-color: #656565;
+  padding: 50px;
+  border-radius: 15px;
+  color: white;
+}
+
+.login .right .box h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.login .right .box p.desc {
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.login .right .box label.label {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.login .right .box input {
+  width: 100%;
+  font-size: 16px;
+  padding: 8px 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.login .right .box p.forget {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: end;
+  font-size: 14px;
+  cursor: pointer;
+}
+.login .right .box .btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.login .right .box .btn button {
+  padding: 8px 40px;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login .right p.regis {
+  position: absolute;
+  bottom: 40px;
+  color: white;
+}
+.login .right p.regis span {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .login {
+    grid-template-areas: "right right";
+  }
+  .login .left {
+    display: none;
+  }
+  .login .right {
+    padding: 0 10%;
+  }
+}
