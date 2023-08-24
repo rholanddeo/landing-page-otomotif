@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hyper Dash | Register</title>
+
     <link href="./css/style.css" rel="stylesheet" />
+    <link href="./js/aos/dist/aos.css" rel="stylesheet">
+    <script src="./js/aos/dist/aos.js"></script>
+
   </head>
 
   <body class="bg-black">
@@ -14,14 +19,17 @@
             <div
               class="relative hidden md:flex md:w-2/5 box-border select-none touch-pan-y max-w-[1400px] mx-auto"
             >
-              <div class="relative z-10 mx-auto mt-10">
+              <div class="relative z-10 mx-auto mt-10"
+              data-aos="fade-down"
+              >
                 <a href="index.html" class="items-center">
-                  <img src="../assets/logo/hyper-dash.svg" alt="logo" />
+                  <img src="./assets/logo/hyper-dash.svg" alt="logo" />
                 </a>
               </div>
               <div
                 class="absolute top-0 left-0 w-full h-full bg-cover z-1"
-                style="background-image: url('../assets/img/register.svg')"
+                style="background-image: url('./assets/img/register.svg')"
+              data-aos="fade-right"
               ></div>
             </div>
             <div
@@ -31,13 +39,15 @@
                 <div class="flex flex-col items-center justify-center mb-3">
                   <a href="index.html">
                     <img
-                      src="../assets/logo/hyper-dash.svg"
+                      src="./assets/logo/hyper-dash.svg"
                       class="h-10 md:hidden"
                       alt="logo"
                     />
                   </a>
                 </div>
-                <div class="flex justify-center items-center mx-auto">
+                <div class="flex justify-center items-center mx-auto"
+                data-aos="zoom-in"
+                >
                   <div class="p-8 rounded-xl w-96 bg-neutral-500 text-white">
                     <h1 class="text-lg font-semibold mb-4">Sign Up</h1>
                     <p class="mb-4 text-xs font-thin">
@@ -122,7 +132,8 @@
                     </form>
                   </div>
                 </div>
-                <div class="mt-4 text-center">
+                <div class="mt-4 text-center"
+                >
                   <p class="text-white text-sm">
                     Already have an account?
                     <a
@@ -138,5 +149,8 @@
         </div>
       </div>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
