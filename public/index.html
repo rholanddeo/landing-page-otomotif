@@ -8,6 +8,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="../node_modules/aos/dist/aos.css" rel="stylesheet">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="../node_modules/aos/dist/aos.js"></script>
+
+
 
     <style>
       .bg-hero-home {
@@ -35,10 +44,12 @@
           });
         });
       });
+
     </script>
+    
   </head>
-  <body>
-    <nav class="bg-neutral-900 fixed w-full z-20 top-0 left-0">
+  <body class="font-poppins">
+    <!-- <nav class="bg-neutral-900 fixed w-full z-20 top-0 left-0">
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-8"
       >
@@ -61,28 +72,44 @@
           </ul>
         </div>
 
-        <div class="md:order-2">
-          <div class="hidden md:block"></div>
-
+        <div class="md:order-2 flex items-center space-x-4">
+          
           <a
             href=""
-            class="text-white focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0 outline outline-0"
-            >Shop</a
+            class="text-white hidden md:inline-block focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center outline outline-0"
           >
+            Shop
+          </a>
+          
           <a
             href="register.html"
-            class="text-white focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0 outline outline-0"
-            >Account</a
+            class="text-white hidden md:inline-block focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center outline outline-0"
           >
-          <a
-            href=""
-            class="text-white hover:bg-black-800 focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center mr-3 md:mr-0"
-            >=</a
+            Account
+          </a>
+          <button
+            id="mobile-menu-button"
+            class="text-white focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center outline outline-0"
           >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
         </div>
 
         <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          class="items-center justify-between w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
           <a href="#hero" class="flex items-center text-white">
@@ -93,14 +120,121 @@
             />
           </a>
         </div>
+        
+        </div>
       </div>
-    </nav>
+    </nav> -->
+<section id="navbar">
+
+    <nav class="bg-neutral-900 w-full z-20 top-0 left-0">
+  <div class="max-w-screen-xl mx-auto p-8">
+    <div class="flex items-center justify-between">
+      <div
+        class="justify-between hidden w-full md:flex md:w-auto"
+        id="navbar-sticky"
+      >
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 gap-3 border rounded-lg text-white md:flex-row md:space-x-8 md:mt-0 md:border-0"
+        >
+          <li>
+            <a href="#air-x">Air X</a>
+          </li>
+          <li>
+            <a href="#lexo-z">Lexo Z</a>
+          </li>
+          <li>
+            <a href="#gravity-9">Gravity 9</a>
+          </li>
+        </ul>
+      </div>
+      <a href="#hero" class="flex items-center text-white">
+        <img
+          src="../assets/logo/hyper-dash.svg"
+          class=""
+          alt="Hyper Dash"
+        />
+      </a>
+      <div class="hidden md:flex items-center space-x-4">
+        <a
+          href="#spec"
+          class="text-white focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center outline outline-0"
+        >
+          Shop
+        </a>
+        <a
+          href="register.html"
+          class="text-white focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center outline outline-0"
+        >
+          Account
+        </a>
+        <button
+          id="mobile-menu-button"
+          class="text-white focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center outline outline-0"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+      <button
+        id="mobile-menu-button"
+        class="text-white md:hidden focus:ring-4 focus:outline-none focus:ring-black-300 rounded-lg px-4 py-2 text-center outline outline-0"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </div>
+    
+  </div>
+  <div id="sidebar" class="hidden bg-gray-800 text-white w-64 h-full fixed top-0 left-0 p-4 transition-transform duration-300 transform -translate-x-full">
+    <!-- Isi sidebar di sini -->
+    <div class="bg-white text-black" >
+      <p>testsrxtcgfcghvhvhgv</p>
+
+    </div>
+</div>
+
+</nav>
+</section>
+
+
+<a href="#navbar" class="fixed bottom-4 right-4 p-1 md:p-3 z-20 bg-yellow-400 text-white rounded-lg shadow hover:bg-white hover:text-black">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6 inline-block align-text-bottom">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+  </svg>
+</a>
+
+
+    
 
     <section
       id="hero"
       class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover bg-hero-home h-screen"
     >
-      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-8">
+      <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-8" data-aos="fade-down">
         <a
           href="#"
           class="bg-transparent border-2 border-white text-white py-2 px-3 text-sm transition-colors hover:bg-white hover:text-black"
@@ -113,7 +247,7 @@
       id="air-x"
       class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover h-screen flex justify-center items-center py-10"
     >
-      <div class="relative w-2/3 h-2/3">
+      <div class="relative w-2/3 h-2/3" data-aos="zoom-in-up" >
         <video autoplay loop muted class="w-full h-full object-cover">
           <source src="../assets/video/air-x-vid.webm" />
           Maaf, browser Anda tidak mendukung video WebM.
@@ -124,164 +258,179 @@
         >
           <h1 class="text-4xl md:text-4xl lg:text-7xl">Air-X</h1>
         </div>
-        <div class="absolute bottom-0 left-0 text-white"
-        style="transform: translateY(100%)"
+        <div
+          class="absolute bottom-0 left-0 text-white"
+          style="transform: translateY(100%)"
         >
-          <p class="text-xl md:text-4xl p-3 py-5">
-            Accelerate Into New Era
-          </p>
+          <p class="text-lg md:text-4xl p-3 py-5">Accelerate Into New Era</p>
         </div>
       </div>
-      
     </section>
 
-    <!-- <section id="lexo-z" class="relative bg-neutral-900 bg-no-repeat bg-cover">
-      <div class="flex">
-        <div class="flex flex-col w-2/6 justify-center mx-auto p-0">
-          <h1 class="text-white text-4xl md:text-7xl mb-5">Lexo-Z</h1>
-          <p class="text-white text-xl md:text-4xl mb-10">Accelerate into a New Era</p>
+    <section
+      id="lexo-z"
+      class="relative bg-neutral-900 bg-no-repeat bg-cover pt-5"
+    >
+      <div class="flex flex-col md:flex-row" data-aos="fade-up">
+        <div class="w-full md:w-1/2 h-auto lg:hidden md:hidden">
+          <img
+            src="../assets/img/lexo-z.svg"
+            alt="Gambar Lexo Z"
+            class="max-w-full h-auto"
+          />
+        </div>
+        <div
+          class="w-full md:w-2/6 flex flex-col justify-center mx-auto p-5 md:p-0 sm:p-20"
+        >
+          <h1 class="text-white text-4xl md:text-7xl mb-3 md:mb-5">Lexo-Z</h1>
+          <p class="text-white text-lg md:text-4xl mb-5 md:mb-10">
+            Accelerate into a New Era
+          </p>
 
-          <div class="w-96">
-            <p class="text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-          </div>
-          <div class="w-96">
-            <p class="text-white mb-4">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-          </div>
-          <div class="w-96">
-            <p class="text-white mb-4">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          <div class="w-full md:w-96">
+            <p class="text-white text-sm md:text-base mb-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor
             </p>
           </div>
-          <div class="flex mt-10">
-            <button class="bg-white text-black py-3 px-6">Order Now</button>
-            <button class="text-white py-3 px-6 ">Learn More</button>
-        </div>
-
-      </div>
-          <div class="w-1/2 h-full">
-              <img src="../assets/img/lexo-z.svg" alt="Gambar Lexo Z" class="max-w-full h-auto">
+          <div class="w-full md:w-96">
+            <p class="text-white text-sm md:text-base mb-3">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip
+            </p>
           </div>
-      </div>
-  </section> -->
-
-  <section id="lexo-z" class="relative bg-neutral-900 bg-no-repeat bg-cover pt-5">
-    <div class="flex flex-col md:flex-row">
-      <div class="w-full md:w-1/2 h-auto lg:hidden md:hidden">
-        <img src="../assets/img/lexo-z.svg" alt="Gambar Lexo Z" class="max-w-full h-auto">
-    </div>
-        <div class="w-full md:w-2/6 flex flex-col justify-center mx-auto p-5 md:p-0 sm:p-20">
-            <h1 class="text-white text-4xl md:text-7xl mb-3 md:mb-5">Lexo-Z</h1>
-            <p class="text-white text-xl md:text-4xl mb-5 md:mb-10">Accelerate into a New Era</p>
-
-            <div class="w-full md:w-96">
-                <p class="text-white mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            </div>
-            <div class="w-full md:w-96">
-                <p class="text-white mb-3">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
-            </div>
-            <div class="w-full md:w-96">
-                <p class="text-white mb-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-            </div>
-            <div class="flex mt-5">
-                <button class="bg-white text-lg text-black py-3 px-9 hover:bg-gray-300">Order Now</button>
-                <button class="text-white text-lg py-3 px-9 ml-2 hover:text-gray-300" >Learn More</button>
-            </div>
+          <div class="w-full md:w-96">
+            <p class="text-white text-sm md:text-base mb-3">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat
+            </p>
+          </div>
+          <div class="flex mt-5">
+            <button
+              class="bg-white text-lg text-black py-3 px-9 hover:bg-gray-300"
+            >
+              Order Now
+            </button>
+            <button
+              class="text-white text-lg py-3 px-9 ml-2 hover:text-gray-300"
+            >
+              Learn More
+            </button>
+          </div>
         </div>
         <div class="w-full md:w-1/2 h-full hidden md:block">
-            <img src="../assets/img/lexo-z.svg" alt="Gambar Lexo Z" class="max-w-full h-full">
+          <img
+            src="../assets/img/lexo-z.svg"
+            alt="Gambar Lexo Z"
+            class="max-w-full h-full"
+          />
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
+    <section
+      id="gravity-9"
+      class="relative bg-white bg-right bg-no-repeat bg-gravity-9 h-screen py-20 lg:py-28 mb-10"
+    >
+      <div class="w-full md:w-2/6 flex flex-col p-5 md:p-0 lg:ms-28 md:ms-28" data-aos="flip-left">
+        <h1 class="text-black text-4xl md:text-7xl mb-3 md:mb-5">Gravity-9</h1>
+        <p class="text-black text-lg md:text-4xl mb-5 md:mb-10">
+          Accelerate into a New Era
+        </p>
 
+        <div class="w-full md:w-96">
+          <p class="text-black text-sm md:text-base mb-3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor
+          </p>
+        </div>
+        <div class="flex mt-5 md:mt-10">
+          <button
+            class="bg-black text-white text-lg py-3 px-9 hover:bg-gray-300"
+          >
+            Order Now
+          </button>
+          <button class="text-black text-lg py-3 px-9 ml-2 hover:text-gray-300">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
 
-<section
-id="gravity-9"
-class="relative bg-white bg-right bg-no-repeat bg-gravity-9 h-screen py-20 lg:py-28 mb-10"
->
-<div class="w-full md:w-2/6 flex flex-col p-5 md:p-0 lg:ms-28 md:ms-28">
-  <h1 class="text-black text-4xl md:text-7xl mb-3 md:mb-5">Gravity-9</h1>
-  <p class="text-black text-xl md:text-4xl mb-5 md:mb-10">Accelerate into a New Era</p>
+    <section
+      id="spec"
+      class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover h-screen"
+      data-aos="fade-up"
+    >
+      <video autoplay loop muted class="w-full h-full object-cover">
+        <source src="../assets/video/spec.webm" />
+        Maaf, browser Anda tidak mendukung video GIF.
+      </video>
+    </section>
 
-  <div class="w-full md:w-96">
-      <p class="text-black mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-  </div>
-  <div class="flex mt-5 md:mt-10">
-      <button class="bg-black text-white text-lg py-3 px-9 hover:bg-gray-300">Order Now</button>
-      <button class="text-black text-lg py-3 px-9 ml-2 hover:text-gray-300">Learn More</button>
-  </div>
-</div>
-</section>
+    <section
+      id="info"
+      class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover text-white"
+    >
+      <div
+        class="flex flex-col md:flex-row justify-center items-center md:justify-between text-center h-full p-4 md:p-28"
+        data-aos="zoom-in-up"
+      >
+        <div class="info-box mb-10 mt-10 md:mb-0 md:mt-0">
+          <p class="mb-3 md:mb-10 text-xs">Max Power</p>
+          <h1 class="text-4xl md:text-6xl mb-1 md:mb-5">1200+</h1>
+          <h3 class="text-xl md:text-4xl font-thin">hp</h3>
+        </div>
+        <div class="info-box mb-10 md:mb-0">
+          <p class="mb-3 md:mb-10 text-xs">EPA estimated range up to</p>
+          <h1 class="text-4xl md:text-6xl mb-1 md:mb-5">516</h1>
+          <h3 class="text-xl md:text-4xl font-thin">mi</h3>
+        </div>
+        <div class="info-box mb-10 md:mb-0">
+          <p class="mb-3 md:mb-10 text-xs">minutes to charge 200 miles</p>
+          <h1 class="text-4xl md:text-6xl mb-1 md:mb-5">12</h1>
+          <h3 class="text-xl md:text-4xl font-thin">mins</h3>
+        </div>
+        <div class="info-box mb-10 md:mb-0">
+          <p class="mb-3 md:mb-10 text-xs">0-60 mph</p>
+          <h1 class="text-4xl md:text-6xl mb-1 md:mb-5">&lt;2</h1>
+          <h3 class="text-xl md:text-4xl font-thin">sec</h3>
+        </div>
+      </div>
+    </section>
 
-<section id="video" class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover h-screen">
-  <video autoplay loop muted class="w-full h-full object-cover">
-    <source src="../assets/video/video.webm" />
-    Maaf, browser Anda tidak mendukung video GIF.
-  </video>
-</section>
+  <!-- <script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const sidebar = document.getElementById('sidebar');
 
+  mobileMenuButton.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+  });
+  </script> -->
 
-<!-- <section id="info" class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover text-white">
-  <div class="flex justify-between text-center h-full p-28">
-    <div class="info-box">
-      <p class="mb-10">Max Power</p>
-      <h1 class="text-6xl font-semibold mb-5">1200+</h1>
-      <h3 class="text-3xl">hp</h3>
+  <!-- <script>
+    // Isi dari script.js
+const mobileMenuButton = document.getElementById("mobile-menu-button");
+const sidebar = document.getElementById("sidebar");
 
-    </div>
-    <div class="info-box">
-      <p class="mb-10">EPA estimated ranged up to</p>
-      <h1 class="text-6xl font-semibold mb-5">516</h1>
-      <h3 class="text-3xl">mi</h3>
-    </div>
-    <div class="info-box">
-      <p class="mb-10">minutes to charge 200 miles</p>
-      <h1 class="text-6xl font-semibold mb-5">12</h1>
-      <h3 class="text-3xl">mins</h3>
-    </div>
-    <div class="info-box">
-      <p class="mb-10">0-60 MPH</p>
-      <h1 class="text-6xl font-semibold mb-5"><2</h1>
-      <h3 class="text-3xl">sec</h3>
-    </div>
-  </div>
-</section> -->
+mobileMenuButton.addEventListener("click", () => {
+    sidebar.classList.toggle("-translate-x-full");
+});
 
-<section id="info" class="relative bg-neutral-900 bg-center bg-no-repeat bg-cover text-white">
-  <div class="flex flex-col md:flex-row justify-center items-center md:justify-between text-center h-full p-4 md:p-28">
-    <div class="info-box mb-10 mt-10 md:mb-0 md:mt-0">
-      <p class="mb-3 md:mb-10">Max Power</p>
-      <h1 class="text-4xl md:text-6xl font-semibold mb-1 md:mb-5">1200+</h1>
-      <h3 class="text-xl md:text-3xl">hp</h3>
-    </div>
-    <div class="info-box mb-10 md:mb-0">
-      <p class="mb-3 md:mb-10">EPA estimated range up to</p>
-      <h1 class="text-4xl md:text-6xl font-semibold mb-1 md:mb-5">516</h1>
-      <h3 class="text-xl md:text-3xl">mi</h3>
-    </div>
-    <div class="info-box mb-10 md:mb-0">
-      <p class="mb-3 md:mb-10">minutes to charge 200 miles</p>
-      <h1 class="text-4xl md:text-6xl font-semibold mb-1 md:mb-5">12</h1>
-      <h3 class="text-xl md:text-3xl">mins</h3>
-    </div>
-    <div class="info-box mb-10 md:mb-0">
-      <p class="mb-3 md:mb-10">0-60 MPH</p>
-      <h1 class="text-4xl md:text-6xl font-semibold mb-1 md:mb-5">&lt;2</h1>
-      <h3 class="text-xl md:text-3xl">sec</h3>
-    </div>
-  </div>
-</section>
+  </script>
 
+  <script>
+    $(document).ready(function() {
+    $("#mobile-menu-button").click(function() {
+        $("#sidebar").toggleClass("-translate-x-full");
+    });
+});
 
+  </script> -->
 
-
-
-
-
-
-
-
-  
-
+  <script>
+    AOS.init();
+  </script>
   
   </body>
 </html>
